@@ -1,0 +1,27 @@
+{
+  "name": "sample-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-server": "tsc -p server",
+    "build-server-watch": "tsc -p -watch server",
+    "build-client": "webpack",
+    "build-client-watch": "webpack --watch",
+    "build": "npm run build-server && npm run build-client",
+    "start": "node build/index",
+    "clean": "rm -r build dist"
+  },
+  "author": "",
+  "dependencies": {
+    "@types/express": "^4.17.6",
+    "@types/node": "^13.13.2",
+    "express": "^4.17.1",
+    "ts-loader": "^7.0.1",
+    "typescript": "^3.8.3",
+    "webpack": "^4.43.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.11"
+  }
+}
